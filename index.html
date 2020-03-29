@@ -1,9 +1,1198 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Recommendation Hub</title>
+
 </head>
 
 <body>
-    <h1>This is a Projectera second commit</h1>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+
+
+            </button>
+
+            <a class="navbar-brand" href="#"><img src="logos/main.png" height="65" width="100" /></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"> <span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </nav>
+    <div id="book1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Readings</h4>
+                    <button type="button" class="close" id="bookhide">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <h4 class="modal-title">Select your mood</h4><br />
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-12">
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Normal">
+                                    <image src="/logos/button/random.png" height="65" width="65" checked>
+                                </button>
+
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Angry">
+                                    <image src="/logos/button/angry.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Excited">
+                                    <image src="/logos/button/excited.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Joyful">
+                                    <image src="/logos/button/joyful.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Romantic">
+                                    <image src="/logos/button/romantic.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Sad">
+                                    <image src="/logos/button/sad.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Stressed">
+                                    <image src="/logos/button/stressed.png" height="65" width="65">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md">
+                            <button type="reset" class="btn btn-secondary btn-sm ml-auto" id="bookhide1">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Recommend</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="food1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Recipes</h4>
+                    <button type="button" class="close" id="foodhide">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <h4 class="modal-title">Select your mood</h4><br />
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-12">
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Normal">
+                                    <image src="/logos/button/random.png" height="65" width="65" checked>
+                                </button>
+
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Angry">
+                                    <image src="/logos/button/angry.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Excited">
+                                    <image src="/logos/button/excited.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Joyful">
+                                    <image src="/logos/button/joyful.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Romantic">
+                                    <image src="/logos/button/romantic.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Sad">
+                                    <image src="/logos/button/sad.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Stressed">
+                                    <image src="/logos/button/stressed.png" height="65" width="65">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md">
+                            <button type="reset" class="btn btn-secondary btn-sm ml-auto" id="foodhide1">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Recommend</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="game1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Play</h4>
+                    <button type="button" class="close" id="gamehide">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <h4 class="modal-title">Select your mood</h4><br />
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-12">
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Normal">
+                                    <image src="/logos/button/random.png" height="65" width="65" checked>
+                                </button>
+
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Angry">
+                                    <image src="/logos/button/angry.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Excited">
+                                    <image src="/logos/button/excited.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Joyful">
+                                    <image src="/logos/button/joyful.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Romantic">
+                                    <image src="/logos/button/romantic.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Sad">
+                                    <image src="/logos/button/sad.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Stressed">
+                                    <image src="/logos/button/stressed.png" height="65" width="65">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md">
+                            <button type="reset" class="btn btn-secondary btn-sm ml-auto" id="gamehide1">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Recommend</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="watch1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Watch</h4>
+                    <button type="button" class="close" id="watchhide">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <h4 class="modal-title">Select your mood</h4><br />
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-12">
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Normal">
+                                    <image src="/logos/button/random.png" height="65" width="65" checked>
+                                </button>
+
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Angry">
+                                    <image src="/logos/button/angry.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Excited">
+                                    <image src="/logos/button/excited.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Joyful">
+                                    <image src="/logos/button/joyful.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Romantic">
+                                    <image src="/logos/button/romantic.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Sad">
+                                    <image src="/logos/button/sad.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Stressed">
+                                    <image src="/logos/button/stressed.png" height="65" width="65">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md">
+                            <button type="reset" class="btn btn-secondary btn-sm ml-auto" id="watchhide1">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Recommend</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="music1" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Listen</h4>
+                    <button type="button" class="close" id="musichide">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <h4 class="modal-title">Select your mood</h4><br />
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 col-md-12">
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Normal">
+                                    <image src="/logos/button/random.png" height="65" width="65" checked>
+                                </button>
+
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Angry">
+                                    <image src="/logos/button/angry.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Excited">
+                                    <image src="/logos/button/excited.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Joyful">
+                                    <image src="/logos/button/joyful.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Romantic">
+                                    <image src="/logos/button/romantic.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Sad">
+                                    <image src="/logos/button/sad.png" height="65" width="65">
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="Stressed">
+                                    <image src="/logos/button/stressed.png" height="65" width="65">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md">
+                            <button type="reset" class="btn btn-secondary btn-sm ml-auto" id="musichide1">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-auto">Recommend</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <header class="jumbotron">
+        <div class="container">
+            <h1>WELCOME TO THE RECOMMENDATION HUB</h1><br><br />
+            <div class="row row-header">
+                <div class="col-sm-12 col-md-12">
+                    <a role="button" class="jumbo-brand"> <img src="logos/book.png"  id="book" height="100" width="200" /></a>
+                    <a role="button" class="jumbo-brand"><img src="logos/food.png"  id="food" height="100" width="200" /></a>
+                    <a role="button" class="jumbo-brand" ><img src="logos/game.png" id="game" height="100" width="200" /></a>
+                    <a role="button" class="jumbo-brand" ><img src="logos/movie.png" id="watch" height="100" width="200" /></a>
+                    <a role="button" class="jumbo-brand" ><img src="logos/music.png" id="music" height="100" width="200" /></a>
+
+                    <p><br /><br /> We recommend books, recipes, games, movies and music...<em>BASED ON YOUR MOOD</em>
+
+                                 <em><br /><br /> Please click on the above icons to find your recommendations based on your current mood</em></p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row row-header offset-md-3">
+            <h2>Featured Recommendations</h2>
+          </div>
+        <div class="row">
+            <div class="col">
+                <div class="layout__column layout__column--half media-lists__main-col-left leftColumn" data-ad="featuredMedia">
+
+                    <h2>Movies</h2>
+                </div>
+
+                <table class="media-lists__table table">
+
+                    <tbody>
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/the_invisible_man_2020">
+
+                                    The Invisible Man
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/onward">
+
+                                    Onward
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/1917_2019">
+
+                                    1917
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__rotten"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/star_wars_the_rise_of_skywalker">
+
+                                    Star Wars: The Rise of Skywalker
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/jumanji_the_next_level">
+
+                                    Jumanji: The Next Level
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__rotten"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/the_hunt_2020">
+
+                                    The Hunt
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/uncut_gems">
+
+                                    Uncut Gems
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/emma_2020">
+
+                                    Emma.
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/just_mercy">
+
+                                    Just Mercy
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/spies_in_disguise">
+
+                                    Spies in Disguise
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <img src="logos/movie.png" height="20" width="20">
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/richard_jewell">
+
+                                    Richard Jewell
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                
+
+
+                <div id="sharethrough_bottom_ad">
+                    <div id="div-gpt-sharethrough-58614829" class="mps-slot" data-mps-slot="sharethrough" data-mps-loadset="0" data-google-query-id="CIyZ09S1v-gCFUIs4Aod6egCeQ">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="layout__column layout__column--half media-lists__main-col-left leftColumn" data-ad="featuredMedia">
+
+
+
+                    <h2>Music</h2>
+                </div>
+
+                <table class="media-lists__table table">
+
+                    <tbody>
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>91%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/the_invisible_man_2020">
+
+                                    The Invisible Man
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>87%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/onward">
+
+                                    Onward
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>89%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/1917_2019">
+
+                                    1917
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__rotten"></span>
+                                    <span>52%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/star_wars_the_rise_of_skywalker">
+
+                                    Star Wars: The Rise of Skywalker
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__fresh"></span>
+                                    <span>71%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/jumanji_the_next_level">
+
+                                    Jumanji: The Next Level
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__rotten"></span>
+                                    <span>54%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/the_hunt_2020">
+
+                                    The Hunt
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>92%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/uncut_gems">
+
+                                    Uncut Gems
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>86%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/emma_2020">
+
+                                    Emma.
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>83%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/just_mercy">
+
+                                    Just Mercy
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>75%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/spies_in_disguise">
+
+                                    Spies in Disguise
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="media-lists__td-rating">
+                                <a href="">
+
+                                    <span class="icon icon--tiny icon__certified_fresh"></span>
+                                    <span>76%</span>
+
+                                </a>
+                            </td>
+                            <td class="media-lists__td-title">
+                                <a href="/m/richard_jewell">
+
+                                    Richard Jewell
+
+                                </a>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                </section>
+
+                </section>
+                <div id="sharethrough_bottom_ad">
+                    <div id="div-gpt-sharethrough-58614829" class="mps-slot" data-mps-slot="sharethrough" data-mps-loadset="0" data-google-query-id="CIyZ09S1v-gCFUIs4Aod6egCeQ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <div class="layout__column layout__column--half media-lists__main-col-left leftColumn" data-ad="featuredMedia">
+
+
+
+                        <h2>Recipes</h2>
+                    </div>
+
+                    <table class="media-lists__table table">
+
+                        <tbody>
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>91%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/the_invisible_man_2020">
+
+                                        The Invisible Man
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>87%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/onward">
+
+                                        Onward
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>89%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/1917_2019">
+
+                                        1917
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__rotten"></span>
+                                        <span>52%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/star_wars_the_rise_of_skywalker">
+
+                                        Star Wars: The Rise of Skywalker
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__fresh"></span>
+                                        <span>71%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/jumanji_the_next_level">
+
+                                        Jumanji: The Next Level
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__rotten"></span>
+                                        <span>54%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/the_hunt_2020">
+
+                                        The Hunt
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>92%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/uncut_gems">
+
+                                        Uncut Gems
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>86%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/emma_2020">
+
+                                        Emma.
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>83%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/just_mercy">
+
+                                        Just Mercy
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>75%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/spies_in_disguise">
+
+                                        Spies in Disguise
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="media-lists__td-rating">
+                                    <a href="">
+
+                                        <span class="icon icon--tiny icon__certified_fresh"></span>
+                                        <span>76%</span>
+
+                                    </a>
+                                </td>
+                                <td class="media-lists__td-title">
+                                    <a href="/m/richard_jewell">
+
+                                        Richard Jewell
+
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                    </section>
+
+                    </section>
+                    <div id="sharethrough_bottom_ad">
+                        <div id="div-gpt-sharethrough-58614829" class="mps-slot" data-mps-slot="sharethrough" data-mps-loadset="0" data-google-query-id="CIyZ09S1v-gCFUIs4Aod6egCeQ">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 </body>
+
+
+
 </html>
+<script>
+    $(document).ready(function () {
+        $('#book').click(function () {
+            $('#book1').modal();
+        });
+    });
+
+    $(document).ready(function () {
+        $('#bookhide').click(function () {
+            $('#book1').modal('hide');
+        });
+    });
+    $(document).ready(function () {
+        $('#bookhide1').click(function () {
+            $('#book1').modal('hide');
+        });
+    });
+
+     $(document).ready(function () {
+        $('#food').click(function () {
+            $('#food1').modal();
+        });
+    });
+
+    $(document).ready(function () {
+        $('#foodhide').click(function () {
+            $('#food1').modal('hide');
+        });
+    });
+    $(document).ready(function () {
+        $('#foodhide1').click(function () {
+            $('#food1').modal('hide');
+        });
+    });
+
+     $(document).ready(function () {
+        $('#game').click(function () {
+            $('#game1').modal();
+        });
+    });
+
+    $(document).ready(function () {
+        $('#gamehide').click(function () {
+            $('#game1').modal('hide');
+        });
+    });
+    $(document).ready(function () {
+        $('#gamehide1').click(function () {
+            $('#game1').modal('hide');
+        });
+    });
+
+     $(document).ready(function () {
+        $('#watch').click(function () {
+            $('#watch1').modal();
+        });
+    });
+
+    $(document).ready(function () {
+        $('#watchhide').click(function () {
+            $('#watch1').modal('hide');
+        });
+    });
+    $(document).ready(function () {
+        $('#watchhide1').click(function () {
+            $('#watch1').modal('hide');
+        });
+    });
+
+    $(document).ready(function () {
+        $('#music').click(function () {
+            $('#music1').modal();
+        });
+    });
+
+    $(document).ready(function () {
+        $('#musichide').click(function () {
+            $('#music1').modal('hide');
+        });
+    });
+    $(document).ready(function () {
+        $('#musichide1').click(function () {
+            $('#music1').modal('hide');
+        });
+    });
+
+
+</script>
+<script>
+   $(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
